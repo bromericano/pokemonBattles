@@ -5,7 +5,7 @@ let player1 = 1000;
 let player2 = 1000;
 
 const choice = process.argv[2];
-if(!choice) {
+if(!choice || choice < 1 || choice > 800) {
     console.log('Please enter a number between 1 and 800!')
 } else {
     pickPokemon(choice, (error, {name, move, moveURL}) => {
