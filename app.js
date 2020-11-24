@@ -16,7 +16,7 @@ if(!choice || choice < 1 || choice > 800) {
                 if(error) {
                     console.log('Error', error)
                 } else {
-                    console.log('You have chosen: ' + name.toUpperCase() + '. ' + name.toUpperCase() + ' uses ' + move.toUpperCase() + ' which has the power of ' + power + '!!')
+                    console.log('You have chosen: ' + name.toUpperCase() + '. ' + name.toUpperCase() + ' uses ' + move.toUpperCase() + ' for ' + power + 'damage!!')
                     player2 -= power;
                     console.log('Player2 has ' + player2 + ' HP left!')
                 }
