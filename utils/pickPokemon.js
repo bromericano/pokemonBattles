@@ -1,5 +1,6 @@
 const request = require('request');
 
+
 const pickPokemon = (choice, callback) => {
     const url = 'https://pokeapi.co/api/v2/pokemon/'+ choice + '/';
     request({url, json: true}, (error, {body}) => {
